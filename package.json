@@ -1,14 +1,48 @@
 {
-  "name": "studycomp",
-  "private": true,
-  "version": "0.0.0",
+  "name": "studybuddy",
+  "version": "1.0.0",
+  "description": "AI-powered study companion with interactive tools, real-time collaboration, and personalized learning assistance",
+  "main": "server.js",
   "type": "module",
+  "author": "Ameer Hamza <ameerhmz5@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ameerhmz/StudyBuddy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ameerhmz/StudyBuddy/issues"
+  },
+  "homepage": "https://github.com/ameerhmz/StudyBuddy#readme",
+  "keywords": [
+    "education",
+    "study",
+    "ai",
+    "react",
+    "learning",
+    "productivity",
+    "collaboration",
+    "flashcards",
+    "notes",
+    "pomodoro",
+    "chatbot"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix",
     "preview": "vite preview",
-    "server": "node server.js"
+    "server": "node server.js",
+    "server:dev": "nodemon server.js",
+    "start": "npm run build && npm run server",
+    "test": "echo \"No tests specified yet\" && exit 0",
+    "clean": "rm -rf dist node_modules/.vite",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\""
   },
   "dependencies": {
     "@tanstack/react-query": "^5.87.4",
