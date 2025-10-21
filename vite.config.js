@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-  allowedHosts: ["pretty-crabs-count.loca.lt", "itchy-yaks-fix.loca.lt", "cfb3893244fe.ngrok-free.app"],
+  allowedHosts: ["pretty-crabs-count.loca.lt", "itchy-yaks-fix.loca.lt", "cfb3893244fe.ngrok-free.app", "vscode-d4346641-19c9-46b9-bc62-284f6443729e.preview.emergentagent.com"],
   },
 })
