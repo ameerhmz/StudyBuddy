@@ -134,11 +134,29 @@
   .hero { gap: var(--spacing-lg); padding: var(--spacing-lg); }
 }
 
+
 @media (max-width: 640px) {
-  .hero { padding: var(--spacing-md); }
-  .cta-group { flex-direction: column; width: 100%; max-width: 300px; }
-  .cta-button { justify-content: center; }
-  .quick-stats { flex-direction: column; gap: var(--spacing-md); padding: var(--spacing-md); }
+  .hero { padding: 0.7rem; }
+  .main-title { font-size: 1.5rem; }
+  .subtitle { font-size: 1rem; }
+  .cta-group { flex-direction: column; width: 100%; max-width: 250px; gap: 0.7rem; }
+  .cta-button { justify-content: center; font-size: 0.95rem; padding: 0.7rem 1rem; }
+  .quick-stats { flex-direction: column; gap: 0.7rem; padding: 0.7rem; }
   .stat-divider { width: 80%; height: 1px; }
   .features-preview { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 0.3rem; }
+  .main-title { font-size: 1.1rem; }
+  .subtitle { font-size: 0.95rem; }
+  .cta-group { max-width: 180px; gap: 0.4rem; }
+  .cta-button { font-size: 0.85rem; padding: 0.5rem 0.7rem; }
+  .quick-stats { padding: 0.3rem; }
+}
+
+@media (max-width: 375px) {
+  .main-title { font-size: 0.9rem; }
+  .subtitle { font-size: 0.8rem; }
+  .cta-button { font-size: 0.75rem; padding: 0.3rem 0.5rem; }
 }

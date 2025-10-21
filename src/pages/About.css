@@ -288,22 +288,40 @@ body {
   }
 }
 
+
 @media (max-width: 480px) {
   .about-title {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
-  
   .about-section {
-    padding: 1.5rem 1.2rem;
+    padding: 1rem 0.6rem;
   }
-  
   .cta-button {
     width: 100%;
-    padding: 0.9rem 1.5rem;
+    padding: 0.7rem 0.7rem;
+    font-size: 0.95rem;
   }
-  
   .section-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .about-section h2 {
+    font-size: 1.1rem;
+  }
+  .about-section p, .features-list li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-title {
+    font-size: 1rem;
+  }
+  .about-section {
+    padding: 0.5rem 0.2rem;
+  }
+  .cta-button {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.5rem;
   }
 }
 

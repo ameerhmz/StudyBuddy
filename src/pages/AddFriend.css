@@ -70,8 +70,23 @@
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
+
 @media (max-width: 640px) {
-  .add-friend-container { padding: 1rem; }
-  .card { padding: 1.5rem; margin-bottom: 1rem; }
-  .search-button { width: 100%; }
+  .add-friend-container { padding: 0.7rem; }
+  .page-title { font-size: 1.2rem; }
+  .page-description { font-size: 0.95rem; }
+  .card { padding: 1rem; margin-bottom: 0.7rem; }
+  .card-title { font-size: 1.1rem; }
+  .search-input { font-size: 0.95rem; padding: 0.5rem; }
+  .search-button { width: 100%; font-size: 0.95rem; padding: 0.5rem 0.7rem; }
+}
+
+@media (max-width: 480px) {
+  .add-friend-container { padding: 0.3rem; }
+  .page-title { font-size: 1rem; }
+  .page-description { font-size: 0.85rem; }
+  .card { padding: 0.5rem; }
+  .card-title { font-size: 0.95rem; }
+  .search-input { font-size: 0.85rem; padding: 0.3rem; }
+  .search-button { font-size: 0.85rem; padding: 0.3rem 0.5rem; }
 }

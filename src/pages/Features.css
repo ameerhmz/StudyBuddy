@@ -45,9 +45,33 @@
   .apple-grid-cols-3 { grid-template-columns: repeat(2, 1fr); }
 }
 
+
 @media (max-width: 640px) {
-  .apple-features-page { padding: 4rem 1.5rem 3rem; }
+  .apple-features-page { padding: 3rem 0.7rem 2rem; }
   .apple-grid-cols-3 { grid-template-columns: 1fr; }
+  .feature-card.apple-card { padding: 1.2rem; }
+  .apple-hero-title { font-size: clamp(1.5rem, 7vw, 2.2rem); }
+  .apple-hero-subtitle { font-size: clamp(1rem, 3vw, 1.1rem); }
+  .apple-feature-title { font-size: 1.1rem; }
+  .apple-feature-description { font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+  .apple-features-page { padding: 2rem 0.3rem 1.2rem; }
+  .feature-card.apple-card { padding: 0.7rem; }
+  .apple-hero-title { font-size: 1.2rem; }
+  .apple-hero-subtitle { font-size: 0.95rem; }
+  .apple-feature-title { font-size: 1rem; }
+  .apple-feature-description { font-size: 0.9rem; }
+  .apple-feature-icon { margin-bottom: 1rem; }
+  .apple-feature-actions { flex-direction: column; gap: 0.5rem; }
+}
+
+@media (max-width: 375px) {
+  .apple-features-page { padding: 1rem 0.1rem 0.7rem; }
+  .feature-card.apple-card { padding: 0.4rem; }
+  .apple-hero-title { font-size: 1rem; }
+  .apple-hero-subtitle { font-size: 0.85rem; }
 }
 
 /* Apple-style Feature Cards */

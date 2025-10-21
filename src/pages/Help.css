@@ -171,12 +171,25 @@
 }
 
 /* Responsive adjustments */
+
 @media (max-width: 640px) {
   .apple-help-title {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
-  
   .apple-help-card {
-    padding: 1.5rem;
+    padding: 1rem;
   }
+  .apple-help-card h3 { font-size: 1.1rem; }
+  .apple-help-card p { font-size: 0.95rem; }
+  .apple-help-step-number { width: 22px; height: 22px; font-size: 0.8rem; }
+  .apple-help-contact-icon { font-size: 1.1rem; width: 32px; height: 32px; }
+}
+
+@media (max-width: 480px) {
+  .apple-help-title { font-size: 1rem; }
+  .apple-help-card { padding: 0.5rem; }
+  .apple-help-card h3 { font-size: 0.95rem; }
+  .apple-help-card p { font-size: 0.85rem; }
+  .apple-help-step-number { width: 16px; height: 16px; font-size: 0.7rem; }
+  .apple-help-contact-icon { font-size: 0.9rem; width: 24px; height: 24px; }
 }
